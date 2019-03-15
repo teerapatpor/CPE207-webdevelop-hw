@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        body {
+            background-color: darkcyan;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <table ALIGN="center" style="width:100%;background-image: url(back.jpg);opacity: 0.8;filter: Alpha(opacity=80);">
+        <tr >
+            <td><a href="homepage.html">
+                    <p style="font-size:30px;" ALIGN="center">Home</p>
+                </a></td>
+            <td><a href="gallerypage.html">
+                    <p style="font-size:30px;" ALIGN="center">Gallery</p>
+                </a> </td>
+            <td><a href="contact.html">
+                    <p style="font-size:30px;" ALIGN="center">Contact</p>
+                </a> </td>
+
+        </tr>
+    </table>
+    <br>
+    <table ALIGN="center" style="width:100%;background-image: url(back.jpg);opacity: 0.8;filter: Alpha(opacity=80);">
+        <tr>
+            <th>
+                <span style="font-size:40px;">Teerapat Rattanapikul</span>
+                <img src="image/1.jpg" ALIGN="right" width="300" height="300">
+                <p style="font-size:30px;">Web Developer</p>
+                <a href="https://www.facebook.com/teerapat.rattanapikun">teerapatrattanapikul@cmu.ac.th</a>
+                <p style="font-size:30px;">(+66)-643-300584</p>
+            </th>
+        </tr>
+    </table>
+    <br>
+    <table ALIGN="center" style="width:100%;background-image: url(back.jpg);opacity: 0.8;filter: Alpha(opacity=80);">
+        <tr>
+            <td>
+                <span style="font-size:20px;"><b><br>Subject:</b></span>
+                <input type="text" size="30" id="Subject" style="margin-left:400px;">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="font-size:20px;"><b>Message:</b></span>
+                <textarea name="message" cols="35" style="margin-left:393px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="font-size:20px;"><b><br>Name:</b></span>
+                <input type="text" size="30" id="name" style="margin-left:415px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="font-size:20px;"><b><br>Gender:</b></span>
+                <input type="radio" name="gender" value="male" checked style="margin-left:400px;"> Male
+                <input type="radio" name="gender" value="female"> Female<br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="font-size:20px;"><b><br>Phone:</b></span>
+                <input type="text" size="30" id="phone" style="margin-left:410px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="font-size:20px;"><b><br>Email:</b></span>
+                <input type="text" size="30" id="email" style="margin-left:412px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="myFunction()" style="margin-left:474px;">Submit</button>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <span style="margin-left:470px;"><b>Teerapat Rattanapikul ---</b>
+                    <a href="https://www.facebook.com/teerapat.rattanapikun">teerapatrattanapikul@cmu.ac.th</a>
+                    <span><b>--- (+66)-643-300584 </b></span>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function myFunction() {
+            alert('Thank you for contact us '+ document.getElementById("name").value)
+        }
+        </script>
+</body>
+
+</html>
